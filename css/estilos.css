@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: rgb(68, 99, 132);
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30 ;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.card{
+    max-width: 250px;
+    position: relative;
+    padding: 15px 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background: #417da2;
+    box-shadow: 2px 2px 5px rgb(66, 66, 66);
+}
+
+.imgProducto{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/*p{
+    color: #E9EEF2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: Lato-Black;
+    padding: 10px;
+}*/
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.btnAgregar{
+    
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 25px;
+    border: 2px solid #326789;
+    background: #E9EEF2;
+    color: #0f0e0e;
+    font-family: Lato-Black;
+    transition: .5s ease;
+}
+.btnAgregar:hover{
+    background: #dd2313;
+    color: #E9EEF2;
+}
+.btnAgregar:active{
+    background: #0F172E;
+}
+
+.cart{
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    text-decoration: none;
+}
+
+.cartIcon{
+    width: 30px;
+}
+
+.cartContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.txtCarrito{
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+.btnVolver{
+    text-decoration: none;
+    width: fit-content;
+}
+.btnVolver button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #dd2313;
+    font-family: Lato-Black;
+    transition: 0.5s ease;
+    border: none;
+}
+
+.btnVolver button:hover{
+    color: #E9EEF2;
+    background: #dd2313;
+}
+
+
+#cartCounter{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.cart{
+    position: absolute;
+    right: 30px;
+    top: 120px;
+    text-decoration: none;
+}
+
+.cartIcon{
+    width: 25px;
+}
+
+.cartContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.txtCarrito{
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+.btnVolver{
+    text-decoration: none;
+    width: fit-content;
+}
+.btnVolver button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #dd2313;
+    font-family: Lato-Black;
+    transition: 0.5s ease;
+    border: none;
+}
+
+.btnVolver button:hover{
+    color: #E9EEF2;
+    background: #dd2313;
+}
+
+
+#cartCounter{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    color: white;
+    background: red;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.tableContainer{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-radius: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table tr th:first-child{
+    width: 80px;
+}
+
+table tr th:nth-child(2){
+    width: 300px;
+}
+
+thead tr th{
+    background: #326789;
+    color: #E9EEF2; 
+}
+
+thead tr th:first-child{
+    border-radius: 10px 0px 0px 0px;
+}
+
+thead tr th:last-child{
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+tbody tr:nth-child(even){
+    background: #326789;
+}
+
+tbody tr:nth-child(odd){
+    background: #78A6C8;
+}
+
+tfoot tr th{
+    background: #326789;
+    color: #E9EEF2;
+}
+
+tfoot tr th:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+
+
+tfoot tr th:last-child{
+    border-radius: 0px 0px 10px 0px;
+}
+
+th{
+    background: transparent;
+}
+
+.imgProdCart{
+    width: 80px;
+    margin: 3px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.detallesTabla{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trash{
+    width: 10px;
+    justify-items: center;
+}
+
+.nombreProd{
+    padding-left: 10px;
+}
+
+.txtTotal{
+    text-align: center;
+    padding: 10px;
+}
+
+.txtTabla{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.btnTerminar{
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #dd2313;
+    font-family: Lato-Black;
+    transition: 0.5s ease;
+    border: none;
+}
+
+.btnTerminar:hover{
+    color: #E9EEF2;
+    background: #dd2313;
+}
+
+
+.cantidad{
+    justify-content: center;
+}
+
+
+
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+body {
+    min-height: 110vh;
+    background-color: #4ca1af;
+    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+}
