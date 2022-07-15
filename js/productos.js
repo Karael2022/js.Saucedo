@@ -2,7 +2,7 @@
 let productos = [
         {id:1, 
         nombre:"Xiaomi Band 6", 
-        precio: "5.000",
+        precio: "14.795",
         img:"https://stylewatch.vtexassets.com/arquivos/ids/174852-800-auto?width=800&height=auto&aspect=true",
         
     },
@@ -42,20 +42,4 @@ let productos = [
     },];
 
     
-let formulario = document.getElementById("formulario");
-formulario.addEventListener("submit", validaciondeFormulario);
-
-function validaciondeFormulario(e) {
-    e.preventDefault ();
-    Swal.fire("Muchas gracias por suscribirse");
-}
-    
-
-/*let comprar = document.getElementById("id");
-comprar.addEventListener("onclick", btnAgregar);
-
-function btnAgregar(e) {
-    e.preventDefault ();
-    Swal.fire("Ud a agregado el elemento a su carrito");
-}*/
 

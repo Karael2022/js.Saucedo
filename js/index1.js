@@ -1,4 +1,4 @@
-// Para que cargue directamente de productos lo comento//
+// Para que cargue directamente de productos.js lo comento//
 /*let productos = [
 
     {id:1, 

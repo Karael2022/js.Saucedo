@@ -63,7 +63,6 @@ let productos = [
 });*/
 
 
-
 if(JSON.parse(localStorage.getItem('carrito')))  {
     carrito = JSON.parse(localStorage.getItem('carrito'))
 } else {
@@ -89,26 +88,22 @@ function desplegarProductos() {
                 <button id=${id} class='btnAgregar'>Comprar</button>
             </div>
         </div>
-        `
+        `;
         const container = document.getElementById('container')
-        container.innerHTML += card
-    }
+        container.innerHTML += card;
 }
-
-desplegarProductos()
-
-
-
-
-// Comienzo a definir la compra//
-
-const btnAgregar = document.getElementsByClassName('btnAgregar')
+const btnAgregar = document.getElementsByClassName('btnAgregar');
 
 for (let i = 0; i < btnAgregar.length; i++) {
     const element = btnAgregar[i];
     element.addEventListener('click', agregarAlCarrito)
     
 }
+
+}
+
+desplegarProductos();
+
 
 function agregarAlCarrito(e) {
     const btn = e.target;
@@ -130,9 +125,20 @@ function agregarAlCarrito(e) {
 }
 
 
+
 const contador = document.getElementById('cartCounter')
 contador.innerHTML = carrito.length
 
 
 
+//Formulario
+
+let formulario = document.getElementById('formulario');
+formulario.addEventListener('submit', validaciondeFormulario);
+
+function validaciondeFormulario(e) {
+    e.preventDefault ();
+    Swal.fire("Muchas gracias por suscribirse");
+}
+    
 

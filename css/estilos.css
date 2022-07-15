@@ -269,10 +269,10 @@ th{
 }
 
 .btnTerminar{
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 10px 10px;
+    border-radius: 5px;
     text-decoration: none;
-    color: #dd2313;
+    color: #faf9f8;
     font-family: Lato-Black;
     transition: 0.5s ease;
     border: none;
@@ -283,7 +283,21 @@ th{
     background: #dd2313;
 }
 
+.btnEliminar{
+    padding: 5px 5px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #0e0201;
+    font-family: Lato-Black;
+    font-size: medium;
+    transition: 0.5s ease;
+    border: none;
+}
 
+.btnEliminar:hover{
+    color: #E9EEF2;
+    background: #13dd90;
+}
 .cantidad{
     justify-content: center;
 }
